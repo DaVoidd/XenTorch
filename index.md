@@ -5,9 +5,9 @@
 
 
 ### Get Started
-```markdown
+
 ![image](https://user-images.githubusercontent.com/65914250/116996667-762b4400-ace4-11eb-9cfd-7033f4cdcdc8.png)
-```
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 

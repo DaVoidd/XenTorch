@@ -27,8 +27,8 @@ local Example_Network_1 = XenTorch.nn.Sequential({
 	{Activation = {XenTorch.nn.Sigmoid, XenTorch.nn.Prime.Sigmoid}}
 }, {XenTorch.nn.Cost.MSE, XenTorch.nn.Prime.Cost.MSE})
 
-local x_data = { {0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1} }
-local y_data = { {0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1} }
+local x_data = {{0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}}
+local y_data = {{0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}}
 
 local train_set, test_set = XenTorch.Data.Separate(x_data, y_data, 1)
 

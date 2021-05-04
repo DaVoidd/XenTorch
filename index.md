@@ -66,4 +66,4 @@ Rectified Linear Unit activation function and its derivative.
 Sigmoid activation function and its derivative.
 
 ### XenTorch.nn.Softmax(x), XenTorch.nn.Prime.Softmax(x)
-Softmax activation function and its derivative. Please note that the Softmax derivative function is currently not a FULLY implemented function, therefore training with Softmax may not be as fast, although it still works.
+Softmax activation function and its derivative. Please note that the Softmax derivative function is currently **not a FULLY implemented function**, therefore training with Softmax may not be as fast, although it still works.

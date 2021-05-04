@@ -1,5 +1,5 @@
 ## API Manual
-
+*Note: Square barackets are used in some places instead of curly barackets, this is in order to prevent errors with the HTML.*
 
 ### About
 

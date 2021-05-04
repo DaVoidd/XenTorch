@@ -49,3 +49,6 @@ Cost function format
 ```
 
 Mind the paranthesis syntax for the functions. Layers have them, activation and cost functions do not.
+
+### XenTorch.nn.Linear(input_dim, output_dim, bias)
+Creates a linear layer of dimensions `input_dim * output_dim`. If `bias`is set to true, all biases will be initialized to 0. Or if preferred, a number can be assigned as the inital biases. `bias = false` means the layer will not be assigned biases.

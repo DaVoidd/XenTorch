@@ -98,3 +98,6 @@ Sigmoid activation function and its derivative.
 
 ### XenTorch.nn.Softmax(x), XenTorch.nn.Prime.Softmax(x)
 Softmax activation function and its derivative. Please note, the Softmax derivative function is currently **not a FULLY implemented function**, therefore training with Softmax may not be as fast, although it still works.
+
+### XenTorch.nn.Cost.MSE(y, y_hat), XenTorch.nn.Prime.Cost.MSE(y, y_hat)
+Mean Squared Error function and its derivative.

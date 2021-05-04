@@ -8,8 +8,8 @@ This module has only been newly released. Therefore, there may be various bugs/e
 ### Get Started
 
 The following example is a demonstration of a neural network which will learn to predict an output based on the given training examples.
-For example sake, the training data has a rule associated with it. If the 2nd input is a 1, the output is {0, 0, 1}, but if it is a 0, then the output is {0, 0, 0}.
-After training finishes, the last 2 lines of code will display what the network predicts, given unseen data.
+For example sake, the training data has a rule associated with it. If the 2nd input is a 1 or a 0 the output should be {0, 0, 1} and {0, 0, 0} respectively.
+After training finishes, the last 4 lines of code will display what the network predicts, given 2 seen and 2 unseen data inputs so you can see how it performs.
 \
 \
 **Model Layout: 3 x 3/No bias -> ReLU -> 3 x 3/Bias -> Sigmoid** | Total of 9 nodes
@@ -27,8 +27,8 @@ local Example_Network_1 = XenTorch.nn.Sequential({
 	{Activation = {XenTorch.nn.Sigmoid, XenTorch.nn.Prime.Sigmoid}}
 }, {XenTorch.nn.Cost.MSE, XenTorch.nn.Prime.Cost.MSE})
 
-local x_data = { {0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1} }
-local y_data = { {0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1} }
+local x_data = {{0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}}
+local y_data = {{0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}}
 
 local train_set, test_set = XenTorch.Data.Separate(x_data, y_data, 1)
 
@@ -41,6 +41,8 @@ local Optimizer = 'GD'
 
 Example_Network_1 = XenTorch.Network.FitData(Example_Network_1, x_train, y_train, Optimizer, lr, x_test, y_test, termination)
 
+print(XenTorch.Network.Run(Example_Network_1, {1, 0, 1}))
+print(XenTorch.Network.Run(Example_Network_1, {0, 1, 0}))
 print(XenTorch.Network.Run(Example_Network_1, {2, 0, 5}))
 print(XenTorch.Network.Run(Example_Network_1, {0, 1, 3}))
 ```

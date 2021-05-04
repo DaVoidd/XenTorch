@@ -19,7 +19,7 @@ After training finishes, the last 2 lines of code will display what the network 
 **lr:** Learning Rate \
 **termination:** The threshold of error rate at which training ceases
 
-`
+```markdown
 local Example_Network_1 = XenTorch.nn.Sequential({
 	XenTorch.nn.Linear(3, 3, false),
 	{Activation = {XenTorch.nn.ReLU, XenTorch.nn.Prime.ReLU}},
@@ -43,7 +43,7 @@ Example_Network_1 = XenTorch.Network.FitData(Example_Network_1, x_train, y_train
 
 print(XenTorch.Network.Run(Example_Network_1, {2, 0, 5}))
 print(XenTorch.Network.Run(Example_Network_1, {0, 1, 3}))
-`
+```
 
 ![image](https://user-images.githubusercontent.com/65914250/116998669-3f0a6200-ace7-11eb-97b8-8e6bec6ba135.png)
 

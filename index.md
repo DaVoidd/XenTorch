@@ -3,18 +3,16 @@
 
 ### About
 
+This module has only been newly released. Therefore, there may be various bugs/errors and it is recommended to not completely rely on this and have a back-up.
 
 ### Get Started
 
-![image](https://user-images.githubusercontent.com/65914250/116996667-762b4400-ace4-11eb-9cfd-7033f4cdcdc8.png)
+The following example is a demonstration of a neural network which will learn how to predict an output based on the given training examples.
+For example sake, the training data has a rule associated with it. If the 2nd input is a 1, the output is {0, 0, 1} and if the 2nd input is a 0, then the output is {0, 0, 0}.
+After training finishes, the last 2 lines of code will display what the network predicts, given unseen data.
+</br></br>
+**Optimizer:** Algorithm in charge of training\
+**lr:** Learning Rate \
+**termination:** The threshold of error rate at which training ceases
 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DaVoidd/XenTorch/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![image](https://user-images.githubusercontent.com/65914250/116998669-3f0a6200-ace7-11eb-97b8-8e6bec6ba135.png)

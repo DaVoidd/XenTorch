@@ -11,6 +11,8 @@ The following example is a demonstration of a neural network which will learn ho
 For example sake, the training data has a rule associated with it. If the 2nd input is a 1, the output is {0, 0, 1} and if the 2nd input is a 0, then the output is {0, 0, 0}.
 After training finishes, the last 2 lines of code will display what the network predicts, given unseen data.
 \
+**Model Layout: 3 x 3/No bias -> ReLU -> 3 x 3/Bias -> Sigmoid**
+\
 \
 **Optimizer:** Algorithm in charge of training\
 **lr:** Learning Rate \

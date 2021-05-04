@@ -7,7 +7,7 @@ This module has only been newly released. Therefore, there may be various bugs/e
 
 ### Get Started
 
-The following example is a demonstration of a neural network which will learn how to predict an output based on the given training examples.
+The following example is a demonstration of a neural network which will learn to predict an output based on the given training examples.
 For example sake, the training data has a rule associated with it. If the 2nd input is a 1, the output is {0, 0, 1} and if the 2nd input is a 0, then the output is {0, 0, 0}.
 After training finishes, the last 2 lines of code will display what the network predicts, given unseen data.
 \

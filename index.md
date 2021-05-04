@@ -7,6 +7,7 @@
 ### Get Started
 
 ```markdown
+`
 -- 3 x 3 x 3 Linear Model, ReLU hidden activation and Sigmoid output activation, output layer bias initialized to 0
 
 local Example_Network_1 = XenTorch.nn.Sequential({
@@ -31,6 +32,7 @@ Example_Network_1 = XenTorch.Network.FitData(Example_Network_1, x_train, y_train
 
 print(XenTorch.Network.Run(Example_Network_1, {2, 0, 5})) --Random data to see the output; correct output should be 0, 0, 0
 print(XenTorch.Network.Run(Example_Network_1, {0, 1, 3})) --correct output: 0, 0, 1
+`
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

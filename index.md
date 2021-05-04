@@ -20,3 +20,32 @@ After training finishes, the last 2 lines of code will display what the network 
 **termination:** The threshold of error rate at which training ceases
 
 ![image](https://user-images.githubusercontent.com/65914250/116998669-3f0a6200-ace7-11eb-97b8-8e6bec6ba135.png)
+
+## Model Functions
+
+
+### XenTorch.nn.Sequential(model, cost_function)
+
+Generates a new network.
+
+Model format:
+```markdown
+[mandatory: layer, optional: layer/activation, ...]
+```
+
+Layer format:
+```markdown
+layer_function()
+```
+
+Activation function format:
+```markdown
+[activation_function, activation_function_derivative]
+```
+
+Cost function format
+```markdown
+[cost_function, cost_function_derivative]
+```
+
+Mind the paranthesis syntax for the functions. Layers have them, activation and cost functions do not.

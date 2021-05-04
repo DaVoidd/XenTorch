@@ -3,7 +3,7 @@
 
 ### About
 
-This module has only been newly released. Therefore, there may be various bugs/errors and it is recommended to not completely rely on this and have a back-up.
+This module has only been newly released. Therefore, there may be various bugs/errors and it is recommended to not completely rely on this and have a back-up, especially when dealing with big networks.
 
 ### Get Started
 

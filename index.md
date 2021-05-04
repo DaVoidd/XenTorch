@@ -1,5 +1,5 @@
 ## API Manual
-*Note: Square barackets are used in some places instead of curly barackets, this is in order to prevent errors with the HTML.*
+*Note: Square barackets are used in some places instead of curly barackets, this is done in order to prevent errors with the HTML.*
 
 ### About
 
@@ -27,8 +27,8 @@ local Example_Network_1 = XenTorch.nn.Sequential({
 	{Activation = {XenTorch.nn.Sigmoid, XenTorch.nn.Prime.Sigmoid}}
 }, {XenTorch.nn.Cost.MSE, XenTorch.nn.Prime.Cost.MSE})
 
-local x_data = [{0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1}]
-local y_data = [{0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}]
+local x_data = { {0, 1, 0}, {0, 0, 1}, {0, 1, 0}, {0, 1, 1}, {1, 0, 0}, {1, 0, 1}, {1, 1, 0}, {1, 1, 1} }
+local y_data = { {0, 0, 1}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1}, {0, 0, 0}, {0, 0, 0}, {0, 0, 1}, {0, 0, 1} }
 
 local train_set, test_set = XenTorch.Data.Separate(x_data, y_data, 1)
 
@@ -44,8 +44,6 @@ Example_Network_1 = XenTorch.Network.FitData(Example_Network_1, x_train, y_train
 print(XenTorch.Network.Run(Example_Network_1, {2, 0, 5}))
 print(XenTorch.Network.Run(Example_Network_1, {0, 1, 3}))
 ```
-
-![image](https://user-images.githubusercontent.com/65914250/116998669-3f0a6200-ace7-11eb-97b8-8e6bec6ba135.png)
 
 ## Model Functions
 

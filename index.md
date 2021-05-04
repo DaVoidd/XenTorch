@@ -37,6 +37,13 @@ Layer format:
 ```markdown
 layer_function()
 ```
+or you may use the following format where the rows are input nodes and columns are the output nodes
+```markdown
+3 x 2 Layer
+[[w11, w12],
+[w21, w22],
+[w31, w32]]
+```
 
 Activation function format:
 ```markdown

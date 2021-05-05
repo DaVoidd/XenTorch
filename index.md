@@ -1,9 +1,14 @@
 ## API Manual
-*Note: Square barackets are used in some places instead of curly barackets, this is done in order to prevent errors with the HTML.*
 
 ### About
 
-This module has only been newly released. Therefore, there may be various bugs/errors and it is recommended to not completely rely on this and have a back-up, especially when dealing with big networks.
+XenTorch is a module which has a goal of simplifying Neural Networks and AI development in Roblox. As you may have already noticed, _XenTorch_ is a name derived from the Python module _PyTorch_. This is for implification of the fact that using this module is similar to PyTorch, although there are quite a few differences. If you have programmed neural networks in Python before, you should be able to adapt to this module faster than others.
+
+### NOTICE
+
+This module has only been newly released. Therefore, there may be various bugs and errors and it is recommended to not completely rely on this and have a back-up, especially when dealing with big networks.
+
+*Note: Square barackets are used in some places instead of curly barackets, this is done in order to prevent errors with the HTML.*
 
 ### Get Started
 

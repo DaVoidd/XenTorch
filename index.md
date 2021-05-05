@@ -87,10 +87,10 @@ Mind the paranthesis syntax for the functions. Layers have them, activation and 
 Creates a linear layer of dimensions `input_dim * output_dim`. If `bias`is set to true, all biases will be initialized to 0. Or if preferred, a number can be assigned as the inital biases. `bias = false` means the layer will not be assigned biases.
 
 ### XenTorch.nn.Wise(function)
-Makes functions that require a single input compatible with the network. You may use this with custom activation functions. However, if the function is dependent on the other nodes in the layer, like Softmax, then you would need to code it to be compatible with layer inputs.
+Makes functions that require a single input compatible with the network. You may use this with custom activation functions. However, if the function is dependent on the other nodes in the layer, like Softmax, then you would need to code it yourself to be compatible with layer inputs. Derivates of input nodes with respect to output nodes at different indices is currently not supported, but you may still use the derivatives of input nodes with respect to the output nodes at the same indices.
 
 ### XenTorch.nn.Intellect(function)
-Makes functions that require 2 inputs and return 1 output compatible with the network. Used for Cost functions where the first input is the prediction and the second is the correct label
+Makes functions that require 2 inputs and return 1 output compatible with the network. Used for Cost functions where the first input is the prediction and the second is the correct label.
 
 ### XenTorch.nn.ReLU(x), XenTorch.nn.Prime.ReLU(x)
 Rectified Linear Unit activation function and its derivative.

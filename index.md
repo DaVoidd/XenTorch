@@ -14,13 +14,13 @@ This module has only been newly released. Therefore, there may be various bugs a
 
 The following example is a demonstration of a neural network which will learn to predict an output based on the given training examples.
 For demonstration purposes, the training data has a rule associated with it. If the 2nd input is a 1 or a 0 the output should be {0, 0, 1} and {0, 0, 0} respectively.
-After training finishes, the last 4 lines of code will display what the network predicts, given 2 seen and 2 unseen data inputs so you can see how it performs. Once you have the code ready, click 'Run' to start the training process.
+After training finishes, the last 4 lines of code will display what the network predicts, given 2 seen and 2 unseen data inputs, so you can see how it performs. Once you have the code ready, click 'Run' to start the training process.
 \
 \
 **Model Layout: 3 x 3/No bias -> ReLU -> 3 x 3/Bias -> Sigmoid** | Total of 9 nodes
 \
 \
-**Optimizer:** Algorithm in charge of training\
+**Optimizer:** Algorithm used for training\
 **lr:** Learning Rate \
 **termination:** The threshold of error rate at which training ceases
 
@@ -68,7 +68,7 @@ Layer format:
 ```markdown
 layer_function()
 ```
-or you may use the following format where the rows are input nodes and columns are the output nodes
+or you may use the following array format where the rows are input nodes and columns are the output nodes
 ```markdown
 3 x 2 Layer
 [[w11, w12],
@@ -104,7 +104,7 @@ Rectified Linear Unit activation function and its derivative.
 Sigmoid activation function and its derivative.
 
 ### XenTorch.nn.Softmax(x), XenTorch.nn.Prime.Softmax(x)
-Softmax activation function and its derivative. Please note, the Softmax derivative function is currently **not a FULLY implemented function**, therefore training with Softmax may not be as fast, although it still works.
+Softmax activation function and its derivative. Please note, the Softmax derivative function currently **does not take into account derivatives of input nodes with respect to output nodes at different indices**, therefore training with Softmax may not be as fast, although it still works.
 
 ### XenTorch.nn.Cost.MSE(y, y_hat), XenTorch.nn.Prime.Cost.MSE(y, y_hat)
 Mean Squared Error function and its derivative.

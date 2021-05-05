@@ -83,14 +83,14 @@ Cost function format
 
 Mind the paranthesis syntax for the functions. Layers have them, activation and cost functions do not.
 
-### XenTorch.nn.Linear(input_dim, output_dim, bias)
+### XenTorch.nn.Linear(input_dim, output_dim, bias:false)
 Creates a linear layer of dimensions `input_dim * output_dim`. If `bias`is set to true, all biases will be initialized to 0. Or if preferred, a number can be assigned as the inital biases. `bias = false` means the layer will not be assigned biases.
 
 ### XenTorch.nn.Wise(function)
-Makes functions that require a single input compatible with the network.
+Makes functions that require a single input compatible with the network. You may use this with custom activation functions. However, if the function is dependent on the other nodes in the layer, like Softmax, then you would need to code it to be compatible with layer inputs.
 
 ### XenTorch.nn.Intellect(function)
-Makes functions that require 2 inputs compatible with the network.
+Makes functions that require 2 inputs and return 1 output compatible with the network. Used for Cost functions where the first input is the prediction and the second is the correct label
 
 ### XenTorch.nn.ReLU(x), XenTorch.nn.Prime.ReLU(x)
 Rectified Linear Unit activation function and its derivative.
@@ -103,3 +103,13 @@ Softmax activation function and its derivative. Please note, the Softmax derivat
 
 ### XenTorch.nn.Cost.MSE(y, y_hat), XenTorch.nn.Prime.Cost.MSE(y, y_hat)
 Mean Squared Error function and its derivative.
+
+## Training Functions
+
+
+### XenTorch.Data.Separate(x_labels, y_labels, batch_size, ordered:false, validation:false)
+Separates data according into `batch_size` sized groups and returns training and test sets. If ordered is set to false, the data will be randomized. If validation is set to true, the function will also return a validation set.\
+\
+**Ratios**\
+Training:Test = 75:25\
+Training:Test:Validation = 70:15:15

@@ -113,7 +113,7 @@ Mean Squared Error function and its derivative.
 
 
 ### XenTorch.Data.Separate(x_labels, y_labels, batch_size, ordered:false, validation:false)
-Separates data according into `batch_size` sized groups and returns training and test sets. If ordered is set to false, the data will be randomized. If validation is set to true, the function will also return a validation set.
+Splits data into `batch_size` sized groups and returns training and test sets. If ordered is set to false, the data will be randomized. If validation is set to true, the function will also return a validation set.
 
 #### **Ratios**
 Training:Test = 75:25\

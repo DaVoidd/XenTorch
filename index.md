@@ -61,7 +61,7 @@ Generates a new network.
 
 Model format:
 ```markdown
-[mandatory: layer, optional: layer/activation, ...]
+{mandatory: layer, optional: layer/activation, ...}
 ```
 
 Layer format:
@@ -78,12 +78,12 @@ or you may use the following array format where the rows are input nodes and col
 
 Activation function format:
 ```markdown
-[activation_function, activation_function_derivative]
+{activation_function, activation_function_derivative}
 ```
 
 Cost function format
 ```markdown
-[cost_function, cost_function_derivative]
+{cost_function, cost_function_derivative}
 ```
 
 Mind the paranthesis syntax for the functions. Layers have them, activation and cost functions do not.

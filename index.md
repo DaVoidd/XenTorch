@@ -59,12 +59,12 @@ print(XenTorch.Network.Run(Example_Network_1, {0, 1, 3}))
 
 Generates a new network.
 
-Model format:
+**Model format:**
 ```markdown
 {mandatory: layer, optional: layer/activation, ...}
 ```
 
-Layer format:
+**Layer format:**
 ```markdown
 layer_function()
 ```
@@ -76,12 +76,12 @@ or you may use the following array format where the rows are input nodes and col
  [w31, w32]]
 ```
 
-Activation function format:
+**Activation function format:**
 ```markdown
 {activation_function, activation_function_derivative}
 ```
 
-Cost function format
+**Cost function format**
 ```markdown
 {cost_function, cost_function_derivative}
 ```

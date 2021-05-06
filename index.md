@@ -132,4 +132,6 @@ Runs an iteration of back propagation.
 ## Saving & Loading Data
 
 
-To access a network's architecture, index it with `.Model`. From there, you can obtain layer data by simply indexing it with its number position. To create a network from pre-defined data, use the `XenTorch.nn.Sequential()` function but instead of using functions to define layers, provide the layer data directly.
+To access a network's architecture, index it with `.Model`. From there, you can obtain layer data by simply indexing it with its number position. Cost function can be accessed by indexing the network with `.Cost_f`. To load a network from pre-defined data, you can either;
+- use the `XenTorch.nn.Sequential()` function to create a new network, but instead of using functions to define layers, provide the layer data directly.
+- index or insert layers into an already existing network by indexing it with `.Model`, and cost function with `.Cost_f`.

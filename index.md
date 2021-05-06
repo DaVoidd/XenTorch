@@ -113,8 +113,23 @@ Mean Squared Error function and its derivative.
 
 
 ### XenTorch.Data.Separate(x_labels, y_labels, batch_size, ordered:false, validation:false)
-Splits data into `batch_size` sized groups and returns training and test sets. If ordered is set to false, the data will be randomized. If validation is set to true, the function will also return a validation set.
+Splits data into `batch_size` sized groups and returns training and test sets. If `ordered` is set to false, the data will be randomized. If `validation` is set to true, the function will also return a validation set.
 
 #### **Ratios**
 Training:Test = 75:25\
 Training:Test:Validation = 70:15:15
+
+### XenTorch.Network.FitData(network, x_train, y_train, Optimizer, lr, x_test, y_test, termination, epoch_num)
+Fits data into the network until `termination` point or `epoch_num` has been reached. Prints network error using the test set.
+
+#### **Optimizers:**
+`'GD'`: Gradient Descent\
+`'SGD'`: Stochastic Gradient Descent
+
+### XenTorch.Network.BackPropagate(network, x_array, y_array, Optimizer, lr)
+Runs an iteration of back propagation.
+
+## Saving & Loading Data
+
+
+To access a network's architecture, index it with `.Model`. From there, you can obtain layer data by simply indexing it with its number position. To create a network from pre-defined data, use the `XenTorch.nn.Sequential()` function but instead of using functions to define layers, provide the layer data directly.

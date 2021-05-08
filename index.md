@@ -25,6 +25,8 @@ After training finishes, the last 4 lines of code will display what the network 
 **termination:** The threshold of error rate at which training ceases
 
 ```markdown
+local XenTorch = require(6784448015)
+
 local Example_Network_1 = XenTorch.nn.Sequential({
 	XenTorch.nn.Linear(3, 3, false),
 	{Activation = {XenTorch.nn.ReLU, XenTorch.nn.Prime.ReLU}},

@@ -9,11 +9,11 @@ XenTorch is a module which has a goal of simplifying Neural Networks and AI deve
 This module has only been newly released. Therefore, there may be various bugs and errors and it is recommended to not completely rely on this and have a back-up, especially when dealing with big networks.
 
 #### Useful Material For Beginners
-- Basics: [https://dataaspirant.com/neural-network-basics/]
-- Activation Functions: [https://medium.com/@cmukesh8688/activation-functions-sigmoid-tanh-relu-leaky-relu-softmax-50d3778dcea5]
-- Backpropagation: [https://brilliant.org/wiki/backpropagation/]
-- Cost Functions: [https://www.analyticsvidhya.com/blog/2021/02/cost-function-is-no-rocket-science/]
-- 3Blue1Brown Tutorial Series: [https://www.youtube.com/watch?v=aircAruvnKk]
+- Basics: (https://dataaspirant.com/neural-network-basics/)
+- Activation Functions: (https://medium.com/@cmukesh8688/activation-functions-sigmoid-tanh-relu-leaky-relu-softmax-50d3778dcea5)
+- Backpropagation: (https://brilliant.org/wiki/backpropagation/)
+- Cost Functions: (https://www.analyticsvidhya.com/blog/2021/02/cost-function-is-no-rocket-science/)
+- 3Blue1Brown Tutorial Series: (https://www.youtube.com/watch?v=aircAruvnKk)
 
 *Note: Square barackets are used in some places instead of curly barackets, this is done in order to prevent errors with the HTML.*
 

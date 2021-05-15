@@ -79,10 +79,15 @@ layer_function()
 ```
 or you may use the following array format where the rows are input nodes and columns are the output nodes
 ```markdown
-3 x 2 Layer
-[[w11, w12],
- [w21, w22],
- [w31, w32]]
+3 x 2 Layer, no bias
+{weights = { {w11, w12},
+ 	     {w21, w22},
+ 	     {w31, w32} },
+bias = false}
+
+1 x 3 Layer, with bias
+{weights = { {w11, w12, w13} },
+bias = {b1, b2, b3}}
 ```
 
 **Activation function format:**

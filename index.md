@@ -21,7 +21,7 @@ This module has only been newly released. Therefore, there may be various bugs a
 
 The following example is a demonstration of a neural network which will learn to predict an output based on the given training examples.
 For demonstration purposes, the training data has a rule associated with it. If the 2nd input is a 1 or a 0 the output should be {0, 0, 1} and {0, 0, 0} respectively.
-After training finishes, the last 4 lines of code will display what the network predicts, given 2 seen and 2 unseen data inputs, so you can see how it performs. Once you have the code ready, click 'Run' to start the training process.
+After training finishes, the last 4 lines of code will display what the network predicts, given 4 different data inputs, so you can see how it performs. Once you have the code ready, click 'Run' to start the training process.
 \
 \
 **Model Layout: 3 x 3/No bias -> ReLU -> 3 x 3/Bias -> Sigmoid** | Total of 9 nodes

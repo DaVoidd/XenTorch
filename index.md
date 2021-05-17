@@ -149,3 +149,23 @@ Runs an iteration of back propagation.
 To access a network's architecture, index it with `.Model`. From there, you can obtain layer data by simply indexing it with its number position. Cost function can be accessed by indexing the network with `.Cost_f`. To load a network from pre-defined data, you can either;
 - use the `XenTorch.nn.Sequential()` function to create a new network, but instead of using functions to define layers, provide the layer data directly.
 - index or insert layers into an already existing network by indexing it with `.Model`, and cost function with `.Cost_f`.
+
+## Genetic Crossover
+
+
+### XenTorch.Genetic.Binary(Parents: table, Weight_Selectiveness: string, Bias_Selectiveness: string)
+Returns an offspring made up of features randomly selected from the parents.
+
+`Weight_Selectiveness`: `'Layer'`, `'Neuron'`, `'Weight'`\
+`Bias_Selectiveness`: `'Complete'`, `'Individual'`
+
+### XenTorch.Genetic.Mean(Parents: table, Activation: boolean)
+Returns an offspring made up the means of the parents' features.
+
+`Activation`: Set to `true` to select the most popular activation functions among parents.
+
+### XenTorch.Genetic.Mutate(offspring, probability: table, m_factor: number)
+Mutates the specified offspring.
+
+`probability`: `{Layer_Mutation_Probability, Neuron_Mutation_Probability, Weight_Mutation_Probability, Bias_Mutation_Probability}`\
+`m_factor`: Mutation factor used for mutating.

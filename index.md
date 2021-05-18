@@ -92,7 +92,7 @@ bias = {b1, b2, b3}}
 
 **Activation function format:**
 ```markdown
-{activation_function, activation_function_derivative}
+{Activation = {activation_function, activation_function_derivative}}
 ```
 
 **Cost function format**

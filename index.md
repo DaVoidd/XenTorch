@@ -1,8 +1,8 @@
-## API Manual
+## API Reference
 
 ### About
 
-XenTorch is a module which has a goal of simplifying Neural Networks and AI development in Roblox. As you may have already noticed, _XenTorch_ is a name derived from the Python module _PyTorch_. This is for implification of the fact that using this module is similar to PyTorch, although there are quite a few differences. If you have programmed neural networks in Python before, you should be able to adapt to this module faster than others.
+XenTorch is a module which has a goal of simplifying Neural Networks and AI development in Roblox. As you may have already noticed, _XenTorch_ is a name derived from the Python module _PyTorch_.
 
 ### NOTICE
 
@@ -106,7 +106,7 @@ Mind the paranthesis syntax for the functions. Layers have them, activation and 
 Creates a linear layer of dimensions `input_dim * output_dim`. If `bias`is set to true, all biases will be initialized to 0. Or if preferred, a number can be assigned as the inital biases. `bias = false` means the layer will not be assigned biases.
 
 ### XenTorch.nn.Wise(function)
-Makes functions that require a single input compatible with the network. You may use this with custom activation functions. However, if the function is dependent on the other nodes in the layer, like Softmax, then you would need to code it yourself to be compatible with layer inputs. Derivates of input nodes with respect to output nodes at different indices is currently not supported, but you may still use the derivatives of input nodes with respect to the output nodes at the same indices.
+Makes functions that require a single input compatible with the network. You may use this with custom activation functions. However, if your function is dependent on the other nodes in the layer, like Softmax, then you would need to code it yourself to be compatible with layer inputs. Derivates of input nodes with respect to output nodes at different indices is currently not supported, but you may still use the derivatives of input nodes with respect to the output nodes at the same index.
 
 ### XenTorch.nn.Intellect(function)
 Makes functions that require 2 inputs and return 1 output compatible with the network. Used for Cost functions where the first input is the prediction and the second is the correct label.
